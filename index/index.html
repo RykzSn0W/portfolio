@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <canvas id="Matrix" style="width: 100%; height: 100%;"></canvas>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="div-nome" onclick="playAudio()">
+        RYKZ
+    </div>
+    <main>
+        <img id="centro" src="../imagens/foto-princ.png">
+    </main>
+    <div id="principal">
+        <ul>
+            <li>
+              <img class="icon" src="../imagens/whatsapp.png" alt="Icone do WhatsApp">
+              <a href="https://wa.me/+3532533933">WhatsApp</a>
+            </li>
+            <li>
+              <img class="icon" src="../imagens/instagram.png" alt="Icone do Instagram">
+              <a href="https://instagram.com/Ruanzxkk">Instagram</a>
+            </li>
+        </ul>
+    </div>
+    <audio id="myAudio">
+        <source src="../sons/entrada.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+            const audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
